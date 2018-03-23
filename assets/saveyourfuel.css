@@ -1,5 +1,5 @@
 body{
-		
+
 		/*background: #536976; /* For browsers that do not support gradients */
 	    /*background: -webkit-linear-gradient(#292E49,,  #536976); /* For Safari 5.1 to 6.0 */
 	    /*background: -o-linear-gradient(#292E49,,  #536976); /* For Opera 11.1 to 12.0 */
@@ -7,7 +7,7 @@ body{
 	    /*background: linear-gradient(#292E49,#536976); /* Standard syntax */
 	    /*background-image: url("banner.jpg");
 	    background-size:cover;*/
-	    
+
 	    /*background: #16222A; /* For browsers that do not support gradients */
 	    /*background: -webkit-linear-gradient(#16222A,,  #16222A); /* For Safari 5.1 to 6.0 */
 	    /*background: -o-linear-gradient(#16222A,,  #16222A); /* For Opera 11.1 to 12.0 */
@@ -45,10 +45,10 @@ div.page{
 
 div.test{
 	height: 100vh;
-} 
+}
 
 div.pos{
-	
+
 }
 
 div.top_navigation{
@@ -151,7 +151,7 @@ div.tag_line{
 	margin-top: 1%;
 }
 
-p.h_TAG-LINE{ 
+p.h_TAG-LINE{
 	color: #BDBDBD;
 font-size: 1em;
 }
@@ -182,7 +182,7 @@ background: url("shadow.png");
 
 div.intro_strt{
 	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-	margin-top:5%; 
+	margin-top:5%;
 }
 
 div.title{
@@ -269,7 +269,7 @@ p.h_intro2{
   text-align: center;
   font-weight: lighter;
   font-size: 1.2em;
-  
+
 }
 
 p.why{
@@ -409,7 +409,7 @@ h3.h_getapp{
 
 div.howtouse{
 	margin-top: 3%;
-	
+
 	padding: 2%;
 }
 div.inner_howtouse{
@@ -477,7 +477,7 @@ div.card_howtouse:hover:before, div.card_howtouse:focus:before, div.card_howtous
 
 /* Underline From Center */
 div.card_howtouse2 {
- 
+
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -519,7 +519,7 @@ div.hr_margin{
 
 div.thing{
 	margin-top: 0%;
-	
+
 	padding: 0%;
 }
 
@@ -611,7 +611,7 @@ a.social_link{
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;  
+  box-shadow: 0 0 1px transparent;
 }
 
 a.social_link:hover, a.social_link:focus{
@@ -701,7 +701,7 @@ hr.h {
     {
         -webkit-transform: translateX(-5px);
        transform: translateX(-5px);
-    } 
+    }
     50%
     {
         -webkit-transform: translateX(3px);
@@ -780,7 +780,7 @@ span.email:hover, span.email:focus, span.email:active{
 }
 
 span.ph{
-	
+
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -802,7 +802,7 @@ span.ph:hover, span.ph:focus, span.ph:active{
 }
 
 
-/*pulse*/
+/*pulse*//*
 @-webkit-keyframes hvr-pulse {
   25% {
     -webkit-transform: scale(1.1);
@@ -823,7 +823,7 @@ span.ph:hover, span.ph:focus, span.ph:active{
     transform: scale(0.9);
   }
 }
-
+*/
 /* Wobble Top */
 @-webkit-keyframes hvr-wobble-top {
   16.65% {
@@ -932,7 +932,7 @@ span.ph:hover, span.ph:focus, span.ph:active{
   }
 }
 
-
+/*
 @-webkit-keyframes hvr-pulse-grow {
   to {
     -webkit-transform: scale(1.1);
@@ -945,7 +945,7 @@ span.ph:hover, span.ph:focus, span.ph:active{
     transform: scale(1.1);
   }
 }
-
+*/
 
 /** Shutter In Horizontal */
 .hvr-shutter-in-horizontal {
@@ -1141,7 +1141,7 @@ span.ph:hover, span.ph:focus, span.ph:active{
   }
 }
 
-/* Pulse Shrink */
+/* Pulse Shrink *//*
 @-webkit-keyframes hvr-pulse-shrink {
   to {
     -webkit-transform: scale(0.9);
@@ -1154,7 +1154,7 @@ span.ph:hover, span.ph:focus, span.ph:active{
     transform: scale(0.9);
   }
 }
-
+*/
 /*--------------------------------------------------------------------------------------------*/
 
 
