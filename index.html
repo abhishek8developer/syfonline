@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>SFY Transrun pvt. ltd.</title>
-    <link rel="stylesheet" type="text/css" href="assets/saveyourfuel.css" />
     <meta charset="utf-8" />
     <meta name="description" content="SAVE YOUR FUEL" />
     <meta name="keywords" content="SAVE YOUR FUEL" />
@@ -13,16 +12,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="assets/saveyourfuel.css" />
+    <link rel="stylesheet" type="text/css" href="assets/menu.css" />
   </head>
   <body>
-    <script src="assets/js/scroll.js"></script>
-    <script src="assets/js/open.js"></script>
-    <script src="assets/js/scrolleffect.js"></script>
     <div class="test">
       <div class="pos">
-        <div class="top_navigation container " id="myhome">
+        <div class="top_navigation container-fluid" id="myhome">
           <div class="row justify-content-center">
-            <ul class="nav test row justify-content-center">
+            <section class="section section--menu" id="Shylock">
+              <nav class="menu menu--shylock">
+                <ul class="menu__list">
+                  <li class="menu__item menu__item--current"><a href="#" id="home" class="menu__link">Home</a></li>
+                  <li class="menu__item"><a href="#" id="app" class="menu__link">Android App</a></li>
+                  <li class="menu__item"><a href="#" id="about" class="menu__link">About us</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+                  <li class="menu__item"><a href="#" id="contact" class="menu__link">Contact us</a></li>
+                </ul>
+              </nav>
+            </section>
+            <!-- <ul class="nav test row justify-content-center">
               <li class="nav-item nav_list_items hvr-underline-reveal">
                 <a class="nav-link active nav_link" id="home" href="index.html#">Home</a>
               </li>
@@ -38,7 +47,7 @@
               <li class="nav-item nav_list_items hvr-underline-reveal">
                 <a class="nav-link nav_link" id="contact" href="index.html#">Contact us</a>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </div>
@@ -50,13 +59,12 @@
       </div>
       <div class="tag_line">
         <center>
-          <p class="h_TAG-LINE lead " >WE PROVIDE SMART TRANSPORT SOLLUTIONS</p>
+          <p class="h_TAG-LINE lead">WE PROVIDE SMART TRANSPORT SOLUTIONS</p>
         </center>
       </div>
     </div>
     <div class="intro_strt">
       <div class="start0">
-        <br />
       	<div class="title" id="myapp">
           <h3 class="h_title">
             <span class="span_title hvr-round-corners hvr-shutter-in-horizontal">Introduction</span>
@@ -303,16 +311,39 @@
         </footer>
       </div>
     </div>
-    <script type="text/javascript" src="assets/jquery-3.3.1.js"></script> <!--important-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/jquery-3.3.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script type="text/javascript" src="assets/particles.js"></script>
-    <script type="text/javascript" src="assets/app.js"></script>
-    <script type="text/javascript" src="assets/jquery-3.3.1.js"></script> <!--important-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/open.js"></script>
+    <script src="assets/js/scrolleffect.js"></script>
+    <script src="assets/particles.js"></script>
+    <script src="assets/app.js"></script>
+    <script src="assets/classie.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/scrolleffect.js"></script>
+    <script>
+  		(function() {
+  			[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+  				var menuItems = menu.querySelectorAll('.menu__link'),
+  					setCurrent = function(ev) {
+  						ev.preventDefault();
+  						var item = ev.target.parentNode; // li
+  						// return if already current
+  						if (classie.has(item, 'menu__item--current')) {
+  							return false;
+  						}
+  						// remove current
+  						classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+  						// set current
+  						classie.add(item, 'menu__item--current');
+  					};
+    				[].slice.call(menuItems).forEach(function(el) {
+    					el.addEventListener('click', setCurrent);
+    				});
+  			});
+  		})(window);
+		</script>
   </body>
 </html>
