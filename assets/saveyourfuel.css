@@ -128,30 +128,37 @@ h1.h_name{
 @media screen and (min-width: 992px) and (max-width: 1920px){
   h3.h_getapp{
     transition: .6s ease;
-    padding: 44px 0 !important;
+    padding-top: 3vw !important;
+  }
+  div.getapp{
+    max-width: 70vw !important;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
   h3.h_getapp{
     transition: .6s ease;
-    padding: 29px 0 !important;
+    padding-top: 2.5vw !important;
+  }
+  div.getapp{
+    max-width: 75vw !important;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 767px){
   h3.h_getapp{
     transition: .6s ease;
-    padding: 2vw 0 !important;
+    padding-top: 2vw !important;
   }
   div.getapp{
-    max-width: 96vw !important;
+    max-width: 80vw !important;
   }
 }
 
 @media screen and (max-width: 576px){
   div.getapp{
     width: 100%;
+    max-width: 96vw !important;
   }
   h1.h_name{
     transition: .6s ease;
@@ -212,7 +219,11 @@ div.intro_strt{
 	margin-top:8%;
 }
 
-div.title, h3.title{
+h3.title{
+  padding: 4vh 0;
+}
+
+div.title{
 	margin: 5% 0;
 }
 
@@ -306,7 +317,7 @@ p.h_intro3{
   font-weight: lighter;
   font-size: 1.2em;
   color: #EDF2F4;
-  margin-top: 4%;
+  margin: 4vh 0;
 }
 
 div.getapp{
@@ -331,7 +342,7 @@ div.getapp_inner:hover, div.getapp_inner:focus, div.getapp_inner:active {
 }
 
 div.getapp_inner{
-	padding: 10vh 1vw;
+	padding: 5vh 1vw;
   box-shadow: inset 0 0 10px 0 #fff;
   border-radius: 5px;
 	margin-right: 2%;
@@ -433,14 +444,17 @@ h3.h_getapp{
 }
 
 div.howtouse{
-	margin-top: 3%;
+  margin-top: 3%;
+  padding-bottom: 20px;
 }
 div.inner_howtouse{
-	margin-top: 5%;
+	margin-top: 3vh;
 }
-
+div.inner_howtouse > div {
+  margin: 20px; 
+}
 div.card_howtouse{
-	padding: 4%;
+	padding: 4vh 2vw;
 }
 
 div.card_howtouse2{
@@ -466,16 +480,18 @@ div.grow {
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
   background: #D7DDE8; /* For browsers that do not support gradients */
-	    background: -webkit-linear-gradient(#D7DDE8,,  #757F9A); /* For Safari 5.1 to 6.0 */
-	    background: -o-linear-gradient(#D7DDE8,,  #757F9A); /* For Opera 11.1 to 12.0 */
-	    background: -moz-linear-gradient(#D7DDE8,, #757F9A); /* For Firefox 3.6 to 15 */
-	    background: linear-gradient(#D7DDE8,#757F9A); /* Standard syntax */
+  background: -webkit-linear-gradient(#D7DDE8,,  #757F9A); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#D7DDE8,,  #757F9A); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#D7DDE8,, #757F9A); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#D7DDE8,#757F9A); /* Standard syntax */
+  transition: .6s ease;
 }
 
 div.grow:hover, div.grow:focus, div.grow:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: .6s ease;
 }
 
 div.card_howtouse:before {
@@ -542,8 +558,6 @@ div.hr_margin{
 
 div.thing{
 	margin-top: 0%;
-
-	padding: 0%;
 }
 
 div.service_div{
