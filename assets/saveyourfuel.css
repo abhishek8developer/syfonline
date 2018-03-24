@@ -125,7 +125,34 @@ h1.h_name{
   transition: .6s ease;
 }
 
-@media screen and (max-width: 510px){
+@media screen and (min-width: 992px) and (max-width: 1920px){
+  h3.h_getapp{
+    transition: .6s ease;
+    padding: 44px 0 !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  h3.h_getapp{
+    transition: .6s ease;
+    padding: 29px 0 !important;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px){
+  h3.h_getapp{
+    transition: .6s ease;
+    padding: 2vw 0 !important;
+  }
+  div.getapp{
+    max-width: 96vw !important;
+  }
+}
+
+@media screen and (max-width: 576px){
+  div.getapp{
+    width: 100%;
+  }
   h1.h_name{
     transition: .6s ease;
     font-size: 1.5em;
